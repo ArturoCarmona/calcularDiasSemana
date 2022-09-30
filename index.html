@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias Laborales</title>
+    <!--CSS Bootstramp-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS local-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="inicio">
+        <!-- Obtener dias-->
+        <!-- Header -->
+        <section class="container py-1 text-center">
+            <nav class="navbar bg-ligth">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://github.com/ArturoCarmona" target="_blank" style="color:black">
+                        <img src="./assets/img/home.ico.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        Home
+                    </a>
+                    
+                </div>
+            </nav>
+            <h1 class="text-center">Dias laborales</h1>
+        </section>
+        <hr>
+        <!-- Cajas para ingresar los valores dd/mm/aaaa -->
+        <div class="container-sm text-center" id="calculadora"></div>
+        <h6 class="text-center">Ingresar el dia, mes y año (dd/mm/aaaa) para saber <br>
+            si es un dia laboral (luneas a viernes) ó si es no laboral <br>
+            (sábado o domingo).
+        </h6>
+        <h6 class="text-center">🥧 ¿Porqué no intentas con la fecha de tu cumpleaños? 🥧</h6>
+        <div class="row justify-content-center my-3">
+            <div class="col-sm-12 col-xs-12 text-center">
+                <label for="day">Dia</label>
+                <input class="border border-dark" type="number" maxlength="2" id="day" placeholder="... Ejemplo 02 ..."
+                    required>
+            </div>
+            <div class="col-sm-12 col-xs-12 text-center my-2">
+                <label for="month">Mes</label>
+                <input class="border border-dark" type="number" id="month" placeholder="... Ejemplo 07 ..." required>
+            </div>
+            <div class="col-sm-12 col-xs-12 text-center my-2">
+                <label for="year">Año</label>
+                <input class="border border-dark" type="number" id="year" placeholder="... Ejemplo 1999 ..." required>
+            </div>
+        </div>
+
+        <!-- Botones de pregunta -->
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-xs-12 text-center my-3">
+                <button class="btn btn-danger btn-lg" id="boton" onclick="fecha()">Obtener dia</button>
+            </div>
+        </div>
+
+        <!--Ventana de resultado-->
+        <div class="row justify-content-center my-3">
+            <div class="alert alert-primary col-6 text-center" id="respuesta" role="alert">
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-12">
+                <p>&copy Copyright 2022 Tutorial bootstrap</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS Bootstramp-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    </div>
+</body>
+</html>
