@@ -43,6 +43,6 @@ function fecha(){
             break;
     }
 
-    return respuesta.innerHTML = (`El fecha ingresada es ${d} y es un dia${(nD>=1 || nD<=5) 
+    return respuesta.innerHTML = (`El fecha ingresada es ${d} y es un dia${(nD>=1 && nD<=5) 
         ? " laboral.":" no laboral."}`)
 }
